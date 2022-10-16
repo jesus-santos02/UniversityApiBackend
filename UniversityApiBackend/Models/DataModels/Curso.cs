@@ -10,8 +10,8 @@ namespace UniversityApiBackend.Models.DataModels
         public string DescripcionCorta { get; set; } = string.Empty;
         public string DescripcionLarga { get; set; } = string.Empty;
         public string PublicoObjetivo { get; set; } = string.Empty;
-        public string Objetivos { get; set; } = string.Empty;
-        public string Requisitos { get; set; } = string.Empty;
+        public List<string> Objetivos { get; set; } = new List<string>();
+        public List<string> Requisitos { get; set; } = new List<string>();
         public Nivel Nivel { get; set; }
 
     }
